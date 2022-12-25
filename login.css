@@ -1,0 +1,127 @@
+body {
+    overflow: hidden;
+}
+
+/* Login Page */
+
+#ptc_logo {
+    width: 80%;
+    margin: 2.5% 9%;
+}
+
+#ptc_coco {
+    margin-top: 25%;
+}
+
+.split {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: hidden;
+    padding-top: 20px;
+  }
+  
+    .left {
+        width: 60%;
+        left: 0;
+        background-color: var(--primary);
+        background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--primary) 37px ), repeating-linear-gradient( #ffffff12, #ffffff12 );
+    }
+
+    .right {
+        width: 40%;
+        right: 0;
+        background-color: whitesmoke;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .centered img {
+        width: 80%;
+    }
+
+
+.login-header {
+    display: block;
+    margin: 5% 5% 0 5%;
+    padding: 5% 5%;
+    border-bottom: 2px solid var(--primary);
+}
+
+.login-header h1 {
+    color: var(--primary);
+}
+
+.login-header h2 {
+    font-size: 14px;
+    color: var(--text);
+}
+
+.login-footer {
+    display: block;
+    text-align: center;
+    margin: 0 5% 0 5%;
+    padding: 0 5%;
+}
+
+.login-footer h1 {
+    font-size: 16px;
+    color: var(--primary);
+}
+
+.login-footer h2 {
+    font-size: 14px;
+    color: var(--text);
+}
+
+.login-footer p {
+    font-size: 12px;
+    color: var(--text);
+}
+
+.login-form {
+    display: block;
+    margin: 0 5% 10% 5%;
+    padding: 5% 5%;
+    border-bottom: 2px solid var(--primary);
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login-form #login-submit {
+    width: 100%;
+    background-color: var(--primary);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: linear .4s;
+}
+
+.login-form #login-submit:hover {
+    width: 100%;
+    background-color: whitesmoke;
+    color: var(--text);
+    padding: 14px 20px;
+    margin: 8px 0;
+    outline: 2px solid var(--primary);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: linear .2s;
+}

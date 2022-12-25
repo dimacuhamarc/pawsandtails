@@ -1,0 +1,274 @@
+* {
+    color: whitesmoke;
+}
+body {
+    background-color: whitesmoke;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5% 5%;
+    background-color: var(--primary);
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--primary) 37px ), repeating-linear-gradient( #ffffff09, #ffffff09 );
+}
+    .nav-container img {
+        width: 30%;
+    }
+
+.nav, .nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+    .nav li {
+        margin: 0 1.5%;
+    }
+
+    .nav #shop-link {
+        color:  var(--primary);
+        background-color: whitesmoke;
+        padding: 15% 60%;
+        border-radius: 5px;
+    }
+
+    
+.brand {
+    width: auto;
+    display: inline-block;
+}
+
+.right-nav {
+    text-align: right;
+    width: 20%;
+}
+
+    .right-nav h1 {
+        font-size: 20px;
+    }
+
+    .right-nav a {
+        font-size: 16px;
+        color: #cccccc;
+    }
+
+    .rn-label, .rn-icon {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .rn-icon i{
+        font-size: 22px;
+        margin-left: 20px;
+    }
+
+.main-container {
+    max-height: 900px;
+}
+    .jumbotron {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 2.5% 0;
+    }
+        .jumbotron h1, .jumbotron h2, .jumbotron p {
+            color: var(--primary);
+        }
+
+        .jumbotron h1 {
+            font-size: 50px;
+        }
+        .jumbotron h2 {
+            font-size: 22px;
+        }
+        .jumbotron-content {
+            width: 40%;
+            margin: 2.5% 0;
+        }
+        .jumbotron img{
+            width: 20%;
+            border-radius: 5px;
+        }
+        .primary {
+            color:  whitesmoke;
+            padding: 1.5% 5%;
+            border-radius: 5px;
+            margin-right: 2.5%;
+        }
+        .shop {
+            background-color: var(--primary);
+        }
+        .shop:hover {
+            background-color:whitesmoke ;
+            color: var(--primary);
+            outline: 2px var(--primary) solid;
+            transition: linear .2s;
+        }
+        .contact {
+            outline: 2px var(--primary) solid;
+            color: var(--primary);
+            padding: 1.5% 5%;
+            border-radius: 5px;
+        }
+    
+    .about {
+        height: 100%;
+        background-color: var(--primary);
+        background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--primary) 37px ), repeating-linear-gradient( #ffffff09, #ffffff09 );
+        text-align: center;
+        padding: 5% 10%;
+    }
+    .about-content {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2.5%;
+    }
+        .about-content img{
+            width: 40%;
+            border-radius: 5px;
+        }
+        .about-content div{
+            width: 40%;
+            border-radius: 5px;
+        }
+
+        .about h1 {
+            color: whitesmoke;
+            font-size: 40px;
+        }
+        
+        .about p {
+            padding: 2.5% 0;
+            color: whitesmoke;
+            text-align: justify;
+            font-size: 22px;
+        }
+    
+    .services {
+        padding: 0 25% 2.5% 25%;
+        margin-bottom: 5.5%;
+    }
+    
+    .services h1 {
+        text-align: center;
+        color: var(--primary);
+        margin: 10% 0;
+        font-size: 40px;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        padding: 0px 8%;
+    }
+        .container h1 {
+            text-align: center;
+            padding-top: 10%;
+            margin-bottom: 60px;
+            font-weight: 600;
+            position: relative;
+        }  
+        .container h1::after {
+            content: '';
+            background: var(--primary);
+            width: 100px;
+            height: 5px;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+    .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 30px;
+    }
+        
+    .service {
+        color: var(--primary);
+        text-align: center;
+        padding: 25px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        background: transparent;
+        outline: 2px solid var(--primary);
+        transition: transform 0.5s, background 0.5s;
+    }
+        .service i {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        
+        .service h2 {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--primary);
+        }
+        
+        .service:hover {
+            background: var(--primary);
+            color: #fff;
+            transform: scale(1.05);
+        }
+        
+        .service:hover i {
+            color: #fff;
+        }
+
+        .service:hover h2 {
+            color: #fff;
+        }
+    
+    .footer {  
+        height: 100%;
+        background-color: var(--primary);
+        background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--primary) 37px ), repeating-linear-gradient( #ffffff09, #ffffff09 );
+        padding: 2.5% 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "contacts mini-about"
+            "contacts mini-about"
+            "contacts copyright";
+    }
+        .copyright { 
+            grid-area: copyright; 
+            text-align: right;
+            align-self: end;
+        }
+            
+        .contacts { 
+            grid-area: contacts; 
+        }
+
+            .contacts h1 {
+                color: whitesmoke;
+                font-size: 40px;
+                margin: 1.5% 0;
+            }
+
+            .contacts p {
+                color: whitesmoke;
+                display: inline-block;
+                margin: 0.5% 2%
+            }
+            
+        .mini-about { 
+            padding: 2.5% 0;
+            border-top: whitesmoke 1px solid;
+            grid-area: mini-about; 
+            text-align: right;
+            align-self: center;
+        }
+            
+

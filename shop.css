@@ -1,0 +1,211 @@
+body {
+    background-color: whitesmoke;
+}
+
+
+
+* {
+    color: whitesmoke;
+}
+
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5% 5%;
+    background-color: var(--primary);
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--primary) 37px ), repeating-linear-gradient( #ffffff09, #ffffff09 );
+}
+    .nav-container img {
+        width: 30%;
+    }
+
+.nav, .nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+    
+.brand {
+    width: auto;
+    display: inline-block;
+}
+
+.right-nav {
+    text-align: right;
+    width: 20%;
+}
+
+    .right-nav h1 {
+        font-size: 20px;
+    }
+
+    .right-nav a {
+        font-size: 16px;
+        color: #cccccc;
+    }
+
+    .rn-label, .rn-icon {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .rn-label h1 {
+        color: whitesmoke;
+    }
+
+    .rn-icon i{
+        font-size: 22px;
+        margin-left: 20px;
+        color: whitesmoke;
+    }
+
+.main-container {
+    min-height: 100%;   
+    padding: 5% 10%;
+}
+
+    .main-container h1 {
+        color: var(--primary);
+        padding-bottom: 1.5%;
+        border-bottom: var(--primary) 2px solid;
+    }
+
+.product-section {
+    margin-bottom: 2.5%;
+}
+
+.products {
+    padding: 5%;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.items {
+    color: var(--primary);
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: var(--primary);
+    outline: 2px solid var(--primary);
+    transition: transform 0.5s, background 0.5s;
+}
+    .items i {
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: whitesmoke;
+    }
+    
+    .items h2 {
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: whitesmoke;
+    }
+
+    .items p {
+        margin-bottom: 8px;
+        color: whitesmoke;
+    }
+    
+    .items:hover {
+        background: whitesmoke;
+        color: #fff;
+        transform: scale(1.05);
+    }
+    
+    .items:hover i {
+        color: var(--primary);
+    }
+
+    .items:hover h2 {
+        color: var(--primary);
+    }
+
+    .items:hover p {
+        color: var(--primary);
+    }
+
+    .items img {
+        width: 100%;
+        border-radius: 2.5%;
+    }
+
+    #add_cart {
+        width: 100%;
+        background-color: whitesmoke;
+        color: var(--primary);
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: linear .4s;
+    }
+
+    #add_cart:hover {
+        align-self: end;
+        width: 100%;
+        background-color: var(--primary);
+        color: whitesmoke;
+        padding: 14px 20px;
+        margin: 8px 0;
+        outline: 2px solid var(--primary);
+        cursor: pointer;
+        border-radius: 8px;
+        transition: linear .2s;
+    }
+
+
+
+    .footer {  
+        height: 100%;
+        background-color: var(--primary);
+        background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--primary) 37px ), repeating-linear-gradient( #ffffff09, #ffffff09 );
+        padding: 2.5% 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "contacts mini-about"
+            "contacts mini-about"
+            "contacts copyright";
+        }
+        .copyright { 
+            grid-area: copyright; 
+            text-align: right;
+            align-self: end;
+        }
+            
+        .contacts { 
+            grid-area: contacts; 
+        }
+
+            .contacts h1 {
+                color: whitesmoke;
+                font-size: 40px;
+                margin: 1.5% 0;
+            }
+
+            .contacts p {
+                color: whitesmoke;
+                display: inline-block;
+                margin: 0.5% 2%
+            }
+            
+        .mini-about { 
+            padding: 2.5% 0;
+            border-top: whitesmoke 1px solid;
+            grid-area: mini-about; 
+            text-align: right;
+            align-self: center;
+        }

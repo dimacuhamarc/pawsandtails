@@ -1,0 +1,95 @@
+.order-table {
+    width: 95%;
+    margin: 1.25% 2.5% 3.5% 2.5%;
+    padding: 1.25% 1.25%;
+    background-color: var(--primary);
+    border-radius: 5px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.order-table th {
+    padding: 1.5% 0;
+    border-bottom: 5px solid var(--primary);
+    color: whitesmoke;
+}
+
+.order-table td {
+    padding: 2.5% 0;
+    max-width: 100px;
+    color: whitesmoke;
+}
+
+.truncate {
+    text-align: justify;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+
+}
+
+.order-table tr {
+    margin: 10px;
+}
+
+.order-table img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.table-items:nth-child(even) {  
+    background-color: #ffffff28;
+}
+
+.summary-item {
+    width: 92.5%;
+    margin: 1.25% 2.5% 3.5% 2.5%;
+    padding: 1.25% 1.25%;
+    background-color: var(--primary);
+    border-radius: 5px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.label {
+    width: 65%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+.value {
+    width: 25%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.summary-item h2 {
+    color: whitesmoke;
+    font-size: 42px;
+}
+
+.summary-item h1 {
+    color: whitesmoke;
+    border-bottom: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.summary-item p {
+    display: inline-block;
+}
+
+.go-back {
+    width: 92.5%;
+    margin: 1.25% 2.5% 3.5% 2.5%;
+    padding: 1.25% 1.25%;
+    border-radius: 5px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.go-back a, .go-back i {
+    color: var(--primary);
+}
